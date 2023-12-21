@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+/* Same Color Variables */
+:root {
+    --main-color: #FB6376;
+    --body-color: #FCB1a6;
+    --container-color: #FFDCCC;
+    --text-color: #5D2A42;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+img {
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 70%;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--body-color);
+}
+
+.container .swiper-slide h3 {
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    left: 12rem;
+}
+
+.container{
+    padding: 6rem 9%;
+}
+
+.container .swiper-wrapper {
+    width: 5000px;
+}
+
+.container .swiper-slide {
+    padding: 2rem 5%;
+    display: grid;
+    grid-template-columns: repeat(2, .2fr);
+    grid-template-rows: repeat(2, .2fr);
+    gap: 2rem;
+}
+
+.container .swiper-slide .box {
+    background: #FB6376;
+    border-radius: 10px;
+    border: .1rem solid #5d2a42;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    padding: 10px;
+    width: 250px;
+}
+
+.container .swiper-slide .box .content{
+    margin-left: 2rem;
+}
+
+
+.container .swiper-slide .box img {
+    height: 10rem;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: black;
+}
+
+.penjelasan {
+    font-size: 10px;
+    margin-top: 200;
+    margin-bottom: 400;
+    color: black;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: #000000;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+
+.btn:hover{
+    background: #5d2a42;
+    letter-spacing: .1rem;
+    color: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background: #5d2a42;
+}
+
+
